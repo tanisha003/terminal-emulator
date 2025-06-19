@@ -1,0 +1,50 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #00ff00;
+    --prompt-color: #00ff00;
+  }
+  
+  .light-mode {
+    --bg-color: #f0f0f0;
+    --text-color: #111111;
+    --prompt-color: #0044cc;
+  }
+  
+  .app {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: monospace;
+    height: 100vh;
+    padding: 10px;
+    overflow-y: auto;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .terminal {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .prompt {
+    display: flex;
+    align-items: center;
+  }
+  
+  .prompt-label {
+    margin-right: 5px;
+    color: var(--prompt-color);
+  }
+  
+  .prompt input {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-family: monospace;
+    flex: 1;
+    outline: none;
+  }
+  
+  .terminal-line {
+    white-space: pre-wrap;
+  }
+  
